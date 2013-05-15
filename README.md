@@ -5,7 +5,7 @@ FortumReader is a library used for reading usage readings from Fortum [link](htt
 
 Library uses screen scraping techniques to gather usage reading information from site. It only works with valid account information.
 
-This library is very beta and early stages, please collaborate, 
+This library is very beta and early stages, please collaborate!
 
 Requirements
 ------------
