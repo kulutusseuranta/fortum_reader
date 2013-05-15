@@ -25,7 +25,7 @@ Get yourself working account in Fortum web site [link](https://www.fortum.com/co
 
 Using Rails? Include gem in Gemfile:
 
-	gem 'fortum_reader'
+	gem 'fortum_reader', '~>0.0.3'
 
 and
 
@@ -47,7 +47,10 @@ Reading array example:
 
 	[{:read_at=>"30.04.2013", :reading=>"101010", :usage_point_id=>"1234567", :comment=>"Siirto"},
 	{:read_at=>"01.05.2013", :reading=>"102010", :usage_point_id=>"1234567", :comment=>"Siirto"}]
-	
+
+Sample project
+--------------
+There is a sample project which you can clone and use: [https://github.com/kulutusseuranta/fortum_reader_sample_app](https://github.com/kulutusseuranta/fortum_reader_sample_app).
 
 How it works
 ------------
