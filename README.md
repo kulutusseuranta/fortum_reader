@@ -5,16 +5,18 @@ FortumReader is a library used for reading usage readings from Fortum [link](htt
 
 Library uses screen scraping techniques to gather usage reading information from site. It only works with valid account information.
 
+This library is very beta and early stages, please collaborate, 
 
 Requirements
 ------------
-Currently known to work in Ruby 1.9.3.
+Currently known to work in Ruby 1.9.3. Uses Mechanize gem for screen scraping.
 
 
 Installation
 ------------
 Simple:
-`gem install fortum_reader`
+
+	gem install fortum_reader
 
 
 Usage
@@ -22,18 +24,55 @@ Usage
 Get yourself working account in Fortum web site [link](https://www.fortum.com/countries/fi/yksityisasiakkaat/pages/rekisteroidy.aspx)
 
 Using Rails? Include gem in Gemlock:
-`gem 'fortum_reader'` and bundle install
 
-Plain ruby example:
+	`gem 'fortum_reader'`
+
+and
+
+	bundle install
+
+**Plain ruby example**:
 
 	require 'fortum_reader'
 	
-	fr = FortumReader.new(username, password)
+	fr=FortumReader.new(username, password)
+
+	# Test if login works ok?
+	fr.login_ok?
+	
+	# Fetch readings array
+	readings=fr.read
+
+Reading array example:
+
+	[{:read_at=>"30.04.2013", :reading=>"101010", :usage_point_id=>"1234567", :comment=>"Siirto"},
+	{:read_at=>"01.05.2013", :reading=>"102010", :usage_point_id=>"1234567", :comment=>"Siirto"}]
 	
 
 How it works
 ------------
 It emulates Firefox browser and logs in to Fortum web site. After login it can read reading information into array.
+
+Contributing
+------------
+
+If you've found a bug, want to submit a patch, or have a feature request, please enter a ticket into our github tracker:
+
+http://github.com/kulutusseuranta/fortum_reader/issues
+
+We strongly encourage bug reports to come with failing tests or at least a reduced example that demonstrates the problem. Similarly, patches should include tests, API documentation, and an update to the manual where relevant. Feel free to send a pull request early though, if you just want some feedback or a code review before preparing your code to be merged.
+
+If you are unsure about whether or not you've found a bug, or want to check to see whether we'd be interested in the feature you want to add before you start working on it, feel free to post to our mailing list.
+
+How to collaborate
+------------------
+
+1. Fork the project.
+1. Make your feature addition or bug fix.
+1. Add tests for it, bonus points! :)
+1. Commit
+1. Send me a pull request. Bonus points for topic branches.
+
 
 License
 -------

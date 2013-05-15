@@ -5,7 +5,7 @@ require 'fortum_reader'
 
 Gem::Specification.new do |s|
   s.name = 'fortum_reader'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.date = '2013-05-15'
   s.summary = "Fortum Reader can read readings from Fortum Web site using screen scraping techniques."
   s.description = "Fortum Reader can read readings from Fortum Web site using screen scraping techniques. Credentials needed."
@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.require_path = "lib"
   s.required_ruby_version = '>= 1.8.7'
   # Dependencies
-  s.add_dependency 'mechanize'
+  s.add_runtime_dependency('mechanize')
 end
