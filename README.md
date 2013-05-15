@@ -23,7 +23,7 @@ Usage
 -----
 Get yourself working account in Fortum web site [link](https://www.fortum.com/countries/fi/yksityisasiakkaat/pages/rekisteroidy.aspx)
 
-Using Rails? Include gem in Gemlock:
+Using Rails? Include gem in Gemfile:
 
 	gem 'fortum_reader'
 

@@ -5,7 +5,7 @@ require 'fortum_reader'
 
 Gem::Specification.new do |s|
   s.name = 'fortum_reader'
-  s.version = '0.0.2'
+  s.version = '0.0.3'
   s.date = '2013-05-15'
   s.summary = "Fortum Reader can read readings from Fortum Web site using screen scraping techniques."
   s.description = "Fortum Reader can read readings from Fortum Web site using screen scraping techniques. Credentials needed."
