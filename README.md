@@ -25,7 +25,7 @@ Get yourself working account in Fortum web site [link](https://www.fortum.com/co
 
 Using Rails? Include gem in Gemlock:
 
-	`gem 'fortum_reader'`
+	gem 'fortum_reader'
 
 and
 
